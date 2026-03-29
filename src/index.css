@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "font1";
+    src: url("/public/fonts/RolexFont-Regular-WebS.woff2");
+}
+
+@font-face {
+    font-family: "font2";
+    src: url("/public/fonts/HelveticaNowTextBold_normal_normal.woff2");
+}
