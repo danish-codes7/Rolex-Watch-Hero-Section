@@ -68,6 +68,22 @@ const App = () => {
             MRP : $ 9,450 - $ 16,800
           </h1>
           </div>
+
+          {/* CTA BUTTONS */}
+
+          <div className="mt-5 flex items-center gap-5">
+            <button className="bg-white rounded-full px-6 py-3 font-bold">
+              <span className="bg-gradient-to-br font-[font1] from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent">
+                Buy Now
+              </span>
+            </button>
+
+            <button className="bg-white rounded-full px-6 py-3 font-bold">
+              <span className="bg-gradient-to-br font-[font1] from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent">
+                discover
+              </span>
+            </button>
+          </div>
           </div>
           
 
