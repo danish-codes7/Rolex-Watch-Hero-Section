@@ -46,7 +46,35 @@ const App = () => {
             modern horology. Its heart beats with the Caliber 3235.
           </p>
         </div>
+
+        {/* Center-Watch-Image */}
+        <img className="h-110 ml-5" src="/images/watch.png" alt="" />
+
+        {/* Right-content */}
+        <div className="ml-25 mt-40">
+          <h1 className="text-3xl text-[#997E48] font-bold bg-gradient-to-br from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent font-[font1]">
+            Rolex Submariner
+          </h1>
+          <p className="text-xl mt-5 text-white font-[font1]">colors</p>
+          <div className="flex bg-white w-30 p-2 rounded-full items-center justify-center gap-5 mt-2">
+            <div className="h-5 w-5 rounded-full bg-[#275e3b]" />
+            <div className="h-5 w-5 rounded-full bg-black" />
+            <div className="h-5 w-5 rounded-full bg-[#C9A96E]" />
+          </div>
+
+          <div className="border-2 border-white flex items-center justify-center p-2 rounded-2xl mt-5 w-90">
+
+          <h1 className="text-xl text-white  font-[font1]">
+            MRP : $ 9,450 - $ 16,800
+          </h1>
+          </div>
+          </div>
+          
+
+
       </div>
+
+
     </div>
   );
 };
