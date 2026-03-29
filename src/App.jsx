@@ -15,14 +15,26 @@ const App = () => {
 
         <div className="flex pr-10 flex-col  items-center gap-4 font-bold font-[font1] text-lg text-white">
           <div className="flex items-center pl-22 gap-8">
-            <h1>HOME</h1>
-            <h1 className="opacity-70">COLLECTIONS</h1>
+            <span className="relative cursor-pointer group">
+              <h1>HOME</h1>
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </span>
+            <span className="relative cursor-pointer group">
+              <h1>COLLECTIONS</h1>
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </span>
           </div>
           <div className="flex gap-10 items-center">
-            <h1 className="opacity-70">ABOUT</h1>
-            <h1 className="opacity-70">SERVICE</h1>
-            <i className="ri-search-line bg-gradient-to-br from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent text-2xl"></i>
-            <i class="ri-heart-3-line bg-gradient-to-br from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent  text-2xl"></i>
+            <span className="relative cursor-pointer group">
+              <h1>ABOUT</h1>
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </span>
+            <span className="relative cursor-pointer group">
+              <h1>SERVICE</h1>
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </span>
+            <i className="ri-search-line cursor-pointer bg-gradient-to-br from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent text-2xl"></i>
+            <i class="ri-heart-3-line cursor-pointer bg-gradient-to-br from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent  text-2xl"></i>
           </div>
         </div>
       </div>
@@ -52,45 +64,44 @@ const App = () => {
 
         {/* Right-content */}
         <div className="ml-25 mt-40">
-          <h1 className="text-3xl text-[#997E48] font-bold bg-gradient-to-br from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent font-[font1]">
+          {/* watch name */}
+          <h1 className="text-4xl text-[#997E48] uppercase whitespace-nowrap font-bold bg-gradient-to-br from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent font-[font2]">
             Rolex Submariner
           </h1>
+
+          {/* colors */}
           <p className="text-xl mt-5 text-white font-[font1]">colors</p>
-          <div className="flex bg-white w-30 p-2 rounded-full items-center justify-center gap-5 mt-2">
-            <div className="h-5 w-5 rounded-full bg-[#275e3b]" />
-            <div className="h-5 w-5 rounded-full bg-black" />
-            <div className="h-5 w-5 rounded-full bg-[#C9A96E]" />
+          <div className="flex bg-white w-35 px-4 py-3 rounded-full items-center justify-center gap-5 mt-2">
+            <div className="h-5 w-5 hover:scale-130 transition-all duration-300 cursor-pointer rounded-full bg-[#275e3b]" />
+            <div className="h-5 w-5 hover:scale-130 transition-all duration-300 cursor-pointer rounded-full bg-black" />
+            <div className="h-5 w-5 hover:scale-130 transition-all duration-300 cursor-pointer rounded-full bg-[#C9A96E]" />
           </div>
 
           <div className="border-2 border-white flex items-center justify-center p-2 rounded-2xl mt-5 w-90">
+            {/* watch-price */}
 
-          <h1 className="text-xl text-white  font-[font1]">
-            MRP : $ 9,450 - $ 16,800
-          </h1>
+            <h1 className="text-xl text-white  font-[font1]">
+              MRP : $ 9,450 - $ 16,800
+            </h1>
           </div>
 
           {/* CTA BUTTONS */}
 
-          <div className="mt-5 flex items-center gap-5">
-            <button className="bg-white rounded-full px-6 py-3 font-bold">
-              <span className="bg-gradient-to-br font-[font1] from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent">
+          <div className="mt-8 flex items-center gap-5">
+            <button className="bg-white rounded-full hover:scale-110 transition-all duration-300 cursor-pointer px-6 py-3 font-bold">
+              <span className="bg-gradient-to-br text-lg font-[font1] from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent">
                 Buy Now
               </span>
             </button>
 
-            <button className="bg-white rounded-full px-6 py-3 font-bold">
-              <span className="bg-gradient-to-br font-[font1] from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent">
+            <button className="bg-white hover:scale-110 transition-all duration-300 cursor-pointer rounded-full px-6 py-3 font-bold">
+              <span className="bg-gradient-to-br text-lg font-[font1] from-[#3d2b1a] via-[#C9A96E] to-[#DFDBD0] bg-clip-text text-transparent">
                 discover
               </span>
             </button>
           </div>
-          </div>
-          
-
-
+        </div>
       </div>
-
-
     </div>
   );
 };
