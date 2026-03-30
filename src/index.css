@@ -2,10 +2,18 @@
 
 @font-face {
     font-family: "font1";
-    src: url("/public/fonts/RolexFont-Regular-WebS.woff2");
+    src: url("/fonts/RolexFont-Regular-WebS.woff2");
 }
 
 @font-face {
     font-family: "font2";
-    src: url("/public/fonts/HelveticaNowTextBold_normal_normal.woff2");
+    src: url("/fonts/HelveticaNowTextBold_normal_normal.woff2");
+}
+@font-face {
+    font-family: "font3";
+    src: url("/fonts/FounersGrotesk-Semibold.woff2");
+}
+@font-face {
+    font-family: "font4";
+    src: url("/fonts/NeueMontreal-Regular.woff2");
 }
